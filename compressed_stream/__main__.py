@@ -4,6 +4,7 @@
 # See:
 # https://github.com/mediawiki-utilities/python-mediawiki-utilities/
 
+import sys
 import csv
 import argparse
 import pathlib
@@ -58,9 +59,14 @@ def main():
             end = ''
             lines = reader
 
-        for line in lines:
-            if not args.quiet:
-                print(line, end=end)
+        try:
+            for line in lines:
+                if not args.quiet:
+                    print(line, end=end)
+        except BrokenPipeError:
+            pass
+
+        exit(0)
 
 if __name__ == '__main__':
     main()
