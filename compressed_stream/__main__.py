@@ -23,7 +23,7 @@ def get_args():
         metavar='FILE',
         type=pathlib.Path,
         nargs='+',
-        help='CSV file to parse. It accepts only 7z.',
+        help='CSV file to parse.',
     )
     parser.add_argument(
         '--quiet', '-q',

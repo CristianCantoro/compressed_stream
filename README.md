@@ -1,2 +1,4 @@
-# compressed_stream
-A simple python utility to handle streams of compressed files
+compressed stream
+-----------------
+
+A simple python module and utility to handle streams of compressed files.
