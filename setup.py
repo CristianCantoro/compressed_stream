@@ -10,7 +10,7 @@ setup(
     name='compressed_stream',
     version='0.0.1',
     author='Cristian Consonni',
-    author_email='kikko' 'cristian' '<a' 't>' 'gm' 'ail' '<d' 'ot>co' 'm',
+    author_email='crist' 'ian' '<dot>' 'conson' 'ni' '<a' 't>' 'uni' 'tn' '<d' 'ot>i' 't',
     license='MIT',
     description='Handle streams of compressed files.',
     long_description=__doc__,
