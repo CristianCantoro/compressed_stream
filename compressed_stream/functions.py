@@ -58,7 +58,7 @@ def file(path_or_f: str):
         return path
 
 
-def open_file(path_or_f: str, encoding='utf-8'):
+def open_file(path_or_f: str, algo=None, encoding='utf-8'):
     """
     Turns a path to a dump file into a file-like object of (decompressed)
     XML data.
@@ -74,10 +74,13 @@ def open_file(path_or_f: str, encoding='utf-8'):
     else:
         path = path_or_f
 
-    match = EXT_RE.search(path)
-    ext = match.groups()[0]
+    if algo is None:
+        match = EXT_RE.search(path)
+        ext = match.groups()[0]
+        algo = ext
+
     p = subprocess.Popen(
-        EXTENSIONS.get(ext, ['cat']) + [path],
+        EXTENSIONS.get(algo, ['cat']) + [path],
         stdout=subprocess.PIPE,
         stderr=open(os.devnull, "w")
     )

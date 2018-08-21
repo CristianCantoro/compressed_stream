@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='compressed_stream',
-    version='0.0.1',
+    version='0.0.2',
     author='Cristian Consonni',
     author_email='crist' 'ian' '<dot>' 'conson' 'ni' '<a' 't>' 'uni' 'tn' '<d' 'ot>i' 't',
     license='MIT',
@@ -18,8 +18,14 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'decompresscat=compressed_stream.__main__:main',
+            'decompressgrep=compressed_stream.__main__:decompressgrep',
+            'decompressless=compressed_stream.__main__:decompressless',
+            'decompressmore=compressed_stream.__main__:decompressmore',
+            'decompressdiff=compressed_stream.__main__:decompressdiff',
+            'decompresscmp=compressed_stream.__main__:decompresscmp',
+            'decompresscat=compressed_stream.__main__:decompresscat',
         ],
     },
     install_requires=[],
+    zip_safe=False,
 )
