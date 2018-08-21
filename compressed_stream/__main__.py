@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """A simple command-line utility to process streams of compressed files."""
 
 # Inspired by mediawiki-utilities by halfak et al.
