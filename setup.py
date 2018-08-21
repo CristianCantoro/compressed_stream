@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """compressed_stream
    -----------------
    A simple python module to handle streams of compressed files.
@@ -25,6 +26,11 @@ setup(
             'decompresscmp=compressed_stream.__main__:decompresscmp',
             'decompresscat=compressed_stream.__main__:decompresscat',
         ],
+    },
+    options={
+        'build_scripts': {
+            'executable': 'python3',
+        },
     },
     install_requires=[],
     zip_safe=False,
