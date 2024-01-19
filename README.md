@@ -5,7 +5,7 @@ A simple python module and utility to handle streams of compressed files.
 
 ## decompresscat
 
-```bash
+```text
 usage: decompresscat [-h] [--algorithm {gz,bz2,7z,lzma}] [--quiet] [--csv]
                      FILE [FILE ...]
 
@@ -27,7 +27,7 @@ optional arguments:
 
 **This function has not been implemented yet**
 
-```bash
+```text
 usage: decompressgrep [-h] [--algorithm {gz,bz2,7z,lzma}] [--quiet] [--csv]
                       FILE [FILE ...]
 
@@ -49,7 +49,7 @@ optional arguments:
 
 **This function has not been implemented yet**
 
-```bash
+```text
 usage: decompressdiff, decompresscmp [-h] [--algorithm {gz,bz2,7z,lzma}]
                                      [--quiet] [--csv]
                                      FILE [FILE ...]
@@ -72,7 +72,7 @@ optional arguments:
 
 **This function has not been implemented yet**
 
-```bash
+```text
 usage: decompressless [-h] [--algorithm {gz,bz2,7z,lzma}] [--quiet] [--csv]
                       FILE [FILE ...]
 
@@ -95,7 +95,7 @@ optional arguments:
 
 **This function has not been implemented yet**
 
-```bash
+```text
 usage: decompressmore [-h] [--algorithm {gz,bz2,7z,lzma}] [--quiet] [--csv]
                       FILE [FILE ...]
 
